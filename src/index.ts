@@ -1,7 +1,5 @@
-import { greetUser } from '$utils/greet';
-
+import { getFieldLocs } from './utils/grabFieldLocations';
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+  const myFieldLocs = getFieldLocs();
 });
